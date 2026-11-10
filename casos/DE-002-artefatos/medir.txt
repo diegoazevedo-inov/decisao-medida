@@ -1,0 +1,9 @@
+===== o0-sdk-mcp
+{"opcao": "o0-sdk-mcp", "linhas": 439, "arquivos": 1, "deps_diretas": 3, "deps_total": 33, "venv_mb": 123, "inicio_s": 0.06, "estado_p95_ms": 0.2, "troca_p95_ms": 0.48, "comando_p95_ms": 9.92}
+===== o1-langgraph
+{"opcao": "o1-langgraph", "linhas": 330, "arquivos": 1, "deps_diretas": 8, "deps_total": 69, "venv_mb": 193, "inicio_s": 0.44, "estado_p95_ms": 0.47, "troca_p95_ms": 4.96, "comando_p95_ms": 12.2}
+===== o2-pydantic-ai
+{"opcao": "o2-pydantic-ai", "linhas": 385, "arquivos": 4, "deps_diretas": 62, "deps_total": 62, "venv_mb": 209, "inicio_s": 0.11, "estado_p95_ms": 0.18, "troca_p95_ms": 0.62, "comando_p95_ms": 23.52}
+
+===== C3 em tokens (sensibilidade; tokenize do Python, sem comentários, docstrings e quebras), 10/11/2026
+o0-sdk-mcp 4255 | o1-langgraph 3548 | o2-pydantic-ai 3910 | razão O0/O1 1,199 | O2/O1 1,102

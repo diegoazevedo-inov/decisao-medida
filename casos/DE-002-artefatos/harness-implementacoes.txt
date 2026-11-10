@@ -1,0 +1,63 @@
+===== o0-sdk-mcp
+sanidade: passou 
+E1: passou 50/50
+E2: passou 0 execuções indevidas em 30
+E2q: passou 10/10 quedas com pedido pendente
+E3: passou 20/20
+bordas: passou todas
+regras: passou todas
+E4: passou 7 de 7 passos com entrada, decisão e resultado conferidos
+-- agente (openai)
+Respondidos: 30/30
+C1: 30/30 (100.0%)
+Falha do modelo: passou
+Confirmar fora do agente: passou
+-- agente (anthropic)
+Respondidos: 30/30
+C1: 30/30 (100.0%)
+Falha do modelo: passou
+Confirmar fora do agente: passou
+-- c2
+C2: passou
+===== o1-langgraph
+sanidade: passou 
+E1: passou 50/50
+E2: passou 0 execuções indevidas em 30
+E2q: passou 10/10 quedas com pedido pendente
+E3: passou 20/20
+bordas: passou todas
+regras: passou todas
+E4: passou 7 de 7 passos com entrada, decisão e resultado conferidos
+-- agente (openai)
+Respondidos: 30/30
+C1: 30/30 (100.0%)
+Falha do modelo: passou
+Confirmar fora do agente: passou
+-- agente (anthropic)
+Respondidos: 30/30
+C1: 30/30 (100.0%)
+Falha do modelo: passou
+Confirmar fora do agente: passou
+-- c2
+C2: passou
+===== o2-pydantic-ai
+sanidade: passou 
+E1: passou 50/50
+E2: passou 0 execuções indevidas em 30
+E2q: passou 10/10 quedas com pedido pendente
+E3: passou 20/20
+bordas: passou todas
+regras: passou todas
+E4: passou 7 de 7 passos com entrada, decisão e resultado conferidos
+-- agente (openai)
+Respondidos: 30/30
+C1: 30/30 (100.0%)
+Falha do modelo: passou
+Confirmar fora do agente: passou
+-- agente (anthropic)
+Respondidos: 30/30
+C1: 30/30 (100.0%)
+Falha do modelo: passou
+Confirmar fora do agente: passou
+-- c2
+C2: passou

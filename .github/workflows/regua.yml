@@ -1,0 +1,17 @@
+# A régua é provada a cada push: o caso bom passa, e cada defeito plantado reprova.
+name: regua
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  regua:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: QUEDAS=50 ./bancada/provar_regua.sh

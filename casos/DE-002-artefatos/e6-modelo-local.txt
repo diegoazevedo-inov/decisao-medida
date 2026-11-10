@@ -1,0 +1,26 @@
+===== o0-sdk-mcp (2026-11-10T18:52:25-04:00)
+Respondidos: 24/24
+  próximo item: ferramenta [], esperada proximo
+  pode continuar: ferramenta [], esperada retomar
+  próximo item: ferramenta [], esperada proximo
+  próximo item: ferramenta [], esperada proximo
+C1: 20/24 (83.3%); ex.: próximo item: ferramenta [], esperada proximo
+conexões registradas: 67; fora de 127.0.0.1 e ::1: 0
+===== o1-langgraph (2026-11-10T18:46:30-04:00)
+Respondidos: 24/24
+  próximo item: ferramenta [], esperada proximo
+  próximo item: ferramenta [], esperada proximo
+  encerra a fila: ferramenta [], esperada encerrar
+  próximo item: ferramenta [], esperada proximo
+C1: 20/24 (83.3%); ex.: próximo item: ferramenta [], esperada proximo
+conexões registradas: 71; fora de 127.0.0.1 e ::1: 0
+===== o2-pydantic-ai (2026-11-10T18:49:29-04:00)
+Respondidos: 22/24
+  pode continuar: ferramenta [], esperada retomar
+  próximo item: comando falhou: {'ok': False}
+  pode continuar: ferramenta ['proximo'], esperada retomar
+  próximo item: comando falhou: {'ok': False}
+  pode continuar: ferramenta [], esperada retomar
+C1: 19/24 (79.2%); ex.: pode continuar: ferramenta [], esperada retomar
+conexões registradas: 73; fora de 127.0.0.1 e ::1: 0
+FIM

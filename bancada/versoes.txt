@@ -1,0 +1,11 @@
+# Versões fixadas em 06/11/2026 para a coleta da DE-002
+# Servidor MCP da bancada, em ambiente próprio. O cliente de cada opção pode usar outra versão.
+mcp==2.3.0
+anthropic==2.6.0
+openai==3.46.0
+# O1
+langgraph==1.2.20
+langgraph-checkpoint-sqlite==3.1.3
+langchain-mcp-adapters==0.3.2
+# O2
+pydantic-ai==2.66.0

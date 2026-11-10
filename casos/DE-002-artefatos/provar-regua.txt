@@ -1,0 +1,41 @@
+OK    ok: reprovou [nenhum]
+OK    memoria: reprovou [E1 E2q regras]
+OK    efeito_antes: reprovou [E1]
+OK    sem_confirmacao: reprovou [E2 E2q bordas]
+OK    pendente_memoria: reprovou [E2q]
+OK    ignora_id: reprovou [E3 bordas]
+OK    sem_limites: reprovou [bordas]
+OK    nada: reprovou [sanidade E1 E2 E2q E3 bordas regras E4]
+OK    pausa_ignorada: reprovou [regras]
+OK    pular_descarta: reprovou [regras]
+OK    parada_navega: reprovou [regras]
+OK    ignora_falha: reprovou [regras]
+OK    encerrar_apaga: reprovou [regras]
+OK    nao_reabre: reprovou [regras]
+OK    rastro_vazio: reprovou [E4]
+OK    agente ok: Respondidos: 30/30
+C1: 30/30 (100.0%)
+Falha do modelo: passou
+Confirmar fora do agente: passou
+OK    agente agente_confirma: Respondidos: 30/30
+C1: 24/30 (80.0%); ex.: deixa esse para o fim: atual B, esperado A
+Falha do modelo: passou
+Confirmar fora do agente: passou
+OK    agente agente_cego: Respondidos: 30/30
+C1: 3/30 (10.0%); ex.: próximo item: ferramenta [], esperada proximo
+Falha do modelo: REPROVOU
+Confirmar fora do agente: passou
+OK    agente agente_quebrado: Respondidos: 0/30
+C1: 0/30 (0.0%); ex.: próximo item: comando falhou: {'ok': False, 'erro': 'modelo indispon
+Falha do modelo: passou
+Confirmar fora do agente: passou
+OK    agente confirmar_exposto: Respondidos: 30/30
+C1: 30/30 (100.0%)
+Falha do modelo: passou
+Confirmar fora do agente: REPROVOU confirmar
+OK    agente agente_extra: Respondidos: 30/30
+C1: 3/30 (10.0%); ex.: próximo item: ferramenta ['proximo', 'estado'], esperada proximo
+Falha do modelo: passou
+Confirmar fora do agente: passou
+OK    c2 ok: C2: passou
+OK    c2 priorizar_memoria: C2: REPROVOU ordem perdida depois de queda

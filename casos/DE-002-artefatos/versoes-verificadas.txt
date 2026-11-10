@@ -1,0 +1,27 @@
+# Verificações de versão e de afirmações externas (10/11/2026)
+
+## pydantic_graph instalado em O2
+pydantic_graph 2.66.0
+pydantic-ai-slim 2.66.0
+módulos: _utils, basenode, decision, exceptions, graph_builder, id_types, join, node, node_types, parent_forks, paths, step, util
+arquivos com 'persistence' no pacote: 0
+
+## langchain 1.4.9 no PyPI (requires_dist)
+versão 1.4.9
+  langchain-core<2.0.0,>=1.7.5
+  langgraph<1.3.0,>=1.2.12
+  pydantic>=2.7.4
+
+## ferramentas expostas pelo servidor MCP da bancada
+  proximo
+  anterior
+  pausar
+  retomar
+  pular
+  encerrar
+  priorizar
+  estado
+
+## persistência fora do framework, por opção (10/11/2026)
+O1 requirements.txt: langgraph-checkpoint-sqlite==3.1.3
+PyPI: pydantic-ai-harness 0.67.0 - The official capability library and harness for Pydantic AI (fornece StepPersistence; não incluído em O2)

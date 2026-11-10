@@ -1,0 +1,270 @@
+[
+ {
+  "texto": "próximo item",
+  "ferramenta": "proximo",
+  "preparo": [],
+  "atual": "B",
+  "situacao": "ativa",
+  "pendente": null
+ },
+ {
+  "texto": "vai para o próximo",
+  "ferramenta": "proximo",
+  "preparo": [],
+  "atual": "B",
+  "situacao": "ativa",
+  "pendente": null
+ },
+ {
+  "texto": "passa esse",
+  "ferramenta": "proximo",
+  "preparo": [],
+  "atual": "B",
+  "situacao": "ativa",
+  "pendente": null
+ },
+ {
+  "texto": "avança um",
+  "ferramenta": "proximo",
+  "preparo": [],
+  "atual": "B",
+  "situacao": "ativa",
+  "pendente": null
+ },
+ {
+  "texto": "pode ir para o seguinte",
+  "ferramenta": "proximo",
+  "preparo": [],
+  "atual": "B",
+  "situacao": "ativa",
+  "pendente": null
+ },
+ {
+  "texto": "seguinte, por favor",
+  "ferramenta": "proximo",
+  "preparo": [],
+  "atual": "B",
+  "situacao": "ativa",
+  "pendente": null
+ },
+ {
+  "texto": "volta um",
+  "ferramenta": "anterior",
+  "preparo": [
+   {
+    "op": "proximo"
+   }
+  ],
+  "atual": "A",
+  "situacao": "ativa",
+  "pendente": null
+ },
+ {
+  "texto": "item anterior",
+  "ferramenta": "anterior",
+  "preparo": [
+   {
+    "op": "proximo"
+   }
+  ],
+  "atual": "A",
+  "situacao": "ativa",
+  "pendente": null
+ },
+ {
+  "texto": "retorna ao anterior",
+  "ferramenta": "anterior",
+  "preparo": [
+   {
+    "op": "proximo"
+   }
+  ],
+  "atual": "A",
+  "situacao": "ativa",
+  "pendente": null
+ },
+ {
+  "texto": "quero rever o de antes",
+  "ferramenta": "anterior",
+  "preparo": [
+   {
+    "op": "proximo"
+   }
+  ],
+  "atual": "A",
+  "situacao": "ativa",
+  "pendente": null
+ },
+ {
+  "texto": "pausa a fila",
+  "ferramenta": "pausar",
+  "preparo": [],
+  "atual": "A",
+  "situacao": "pausada",
+  "pendente": null
+ },
+ {
+  "texto": "segura aí",
+  "ferramenta": "pausar",
+  "preparo": [],
+  "atual": "A",
+  "situacao": "pausada",
+  "pendente": null
+ },
+ {
+  "texto": "espera um pouco, não troca nada",
+  "ferramenta": "pausar",
+  "preparo": [],
+  "atual": "A",
+  "situacao": "pausada",
+  "pendente": null
+ },
+ {
+  "texto": "dá uma parada na troca",
+  "ferramenta": "pausar",
+  "preparo": [],
+  "atual": "A",
+  "situacao": "pausada",
+  "pendente": null
+ },
+ {
+  "texto": "pode continuar",
+  "ferramenta": "retomar",
+  "preparo": [
+   {
+    "op": "pausar"
+   }
+  ],
+  "atual": "A",
+  "situacao": "ativa",
+  "pendente": null
+ },
+ {
+  "texto": "retoma a fila",
+  "ferramenta": "retomar",
+  "preparo": [
+   {
+    "op": "pausar"
+   }
+  ],
+  "atual": "A",
+  "situacao": "ativa",
+  "pendente": null
+ },
+ {
+  "texto": "volta a andar",
+  "ferramenta": "retomar",
+  "preparo": [
+   {
+    "op": "pausar"
+   }
+  ],
+  "atual": "A",
+  "situacao": "ativa",
+  "pendente": null
+ },
+ {
+  "texto": "onde estou?",
+  "ferramenta": "estado",
+  "preparo": [],
+  "atual": "A",
+  "situacao": "ativa",
+  "pendente": null
+ },
+ {
+  "texto": "quantos faltam?",
+  "ferramenta": "estado",
+  "preparo": [],
+  "atual": "A",
+  "situacao": "ativa",
+  "pendente": null
+ },
+ {
+  "texto": "qual é o item atual?",
+  "ferramenta": "estado",
+  "preparo": [],
+  "atual": "A",
+  "situacao": "ativa",
+  "pendente": null
+ },
+ {
+  "texto": "como está a fila?",
+  "ferramenta": "estado",
+  "preparo": [],
+  "atual": "A",
+  "situacao": "ativa",
+  "pendente": null
+ },
+ {
+  "texto": "deixa esse para o fim",
+  "ferramenta": "pular",
+  "preparo": [],
+  "atual": "A",
+  "situacao": "ativa",
+  "pendente": "pular"
+ },
+ {
+  "texto": "pula esse",
+  "ferramenta": "pular",
+  "preparo": [],
+  "atual": "A",
+  "situacao": "ativa",
+  "pendente": "pular"
+ },
+ {
+  "texto": "joga esse para o final",
+  "ferramenta": "pular",
+  "preparo": [],
+  "atual": "A",
+  "situacao": "ativa",
+  "pendente": "pular"
+ },
+ {
+  "texto": "encerra a fila",
+  "ferramenta": "encerrar",
+  "preparo": [],
+  "atual": "A",
+  "situacao": "ativa",
+  "pendente": "encerrar"
+ },
+ {
+  "texto": "terminei por hoje, fecha tudo",
+  "ferramenta": "encerrar",
+  "preparo": [],
+  "atual": "A",
+  "situacao": "ativa",
+  "pendente": "encerrar"
+ },
+ {
+  "texto": "acabou, encerra",
+  "ferramenta": "encerrar",
+  "preparo": [],
+  "atual": "A",
+  "situacao": "ativa",
+  "pendente": "encerrar"
+ },
+ {
+  "texto": "qual a previsão do tempo?",
+  "ferramenta": null,
+  "preparo": [],
+  "atual": "A",
+  "situacao": "ativa",
+  "pendente": null
+ },
+ {
+  "texto": "conta uma piada",
+  "ferramenta": null,
+  "preparo": [],
+  "atual": "A",
+  "situacao": "ativa",
+  "pendente": null
+ },
+ {
+  "texto": "obrigado",
+  "ferramenta": null,
+  "preparo": [],
+  "atual": "A",
+  "situacao": "ativa",
+  "pendente": null
+ }
+]
