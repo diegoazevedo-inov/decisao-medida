@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Para citar, use os metadados abaixo."
+title: "Decisão Medida"
+abstract: "Protocolo para decidir tecnologia e processo de um projeto com evidência, contra requisitos funcionais e não funcionais, com um caso completo (DE-002, orquestração de agentes) e a bancada que permite repeti-lo."
+type: software
+authors:
+  - given-names: "Diêgo"
+    family-names: "Azevedo"
+    orcid: "https://orcid.org/0009-0009-1839-7476"
+version: "0.4"
+date-released: "2026-11-11"
+license: Apache-2.0
+repository-code: "https://github.com/diegoazevedo-inov/decisao-medida"
+keywords:
+  - tomada de decisão
+  - avaliação de tecnologia
+  - sistemas agênticos
+  - reprodutibilidade
