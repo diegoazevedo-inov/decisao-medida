@@ -4,7 +4,7 @@
 
 Um protocolo para decidir tecnologia e processo de um projeto com evidência, contra requisitos funcionais e não funcionais. A regra de decisão vem antes da coleta, a régua precisa provar que reprova um caso ruim, e toda decisão registra uma previsão conferida em data marcada.
 
-Versão 0.4. Primeira conferência marcada para 04/02/2027.
+Versão 0.4 ([doi:10.5281/zenodo.24139207](https://doi.org/10.5281/zenodo.24139207)). Primeira conferência marcada para 04/02/2027.
 
 ## Para quê
 

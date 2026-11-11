@@ -2,7 +2,7 @@
 
 A protocol for deciding a project's technology and process with evidence, against functional and non-functional requirements. The decision rule comes before data collection, the measuring instrument must prove it rejects a known bad case, and each decision records a prediction checked on a set date.
 
-Version 0.4. First check scheduled for 2027-02-04. The documents are in Portuguese.
+Version 0.4 ([doi:10.5281/zenodo.24139207](https://doi.org/10.5281/zenodo.24139207)). First check scheduled for 2027-02-04. The documents are in Portuguese.
 
 ## Case: adopt an agent orchestration framework?
 
