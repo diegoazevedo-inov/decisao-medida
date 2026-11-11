@@ -4,11 +4,11 @@
 
 Um protocolo para decidir tecnologia e processo de um projeto com evidência, contra requisitos funcionais e não funcionais. A regra de decisão vem antes da coleta, a régua precisa provar que reprova um caso ruim, e toda decisão registra uma previsão conferida em data marcada.
 
-Estado: rascunho v0.4, em primeiro uso. Nenhuma decisão foi conferida ainda.
+Versão 0.4. Primeira conferência marcada para 04/02/2027.
 
-## O problema
+## Para quê
 
-O protocolo parte de três premissas, que este repositório não mede: decisões técnicas podem ser tomadas por opinião, moda ou documentação do fornecedor; quando há medição, o critério pode aparecer depois do resultado, sem que ninguém volte para ver se a decisão acertou; e, com sistemas agênticos, construir uma alternativa para comparar ficou barato o bastante para tornar a medição viável. O único dado aqui sobre a última premissa é o tempo de implementação da DE-002, relatado sem registro.
+O protocolo troca o argumento pela medição na hora de escolher tecnologia ou processo. Requisitos e regra de decisão são fixados antes da coleta; as opções são construídas e medidas na mesma bancada; e a decisão registra uma previsão, conferida depois. Com sistemas agênticos, construir as alternativas para comparar se torna viável mesmo em equipe pequena.
 
 ## Como funciona
 
@@ -38,25 +38,22 @@ A [DE-002](casos/DE-002-orquestracao-de-agentes.md) comparou SDK do provedor com
 
 | Medida | SDK + MCP | LangGraph | Pydantic AI |
 |---|---:|---:|---:|
-| Retomada em 50 quedas forçadas (5 pontos fixos × 10, durante `iniciar` e `item_finalizado`) | 50/50 | 50/50 | 50/50 |
+| Retomada em 50 quedas forçadas (5 pontos do fluxo, 10 vezes cada) | 50/50 | 50/50 | 50/50 |
 | Operação protegida sem confirmação | 0 | 0 | 0 |
 | Acerto, 90 comandos, modelo real | 100% | 100% | 100% |
 | Custo de 90 comandos, modelo real | US$ 0,41 | US$ 0,38 | US$ 0,34 |
 | Linhas de código próprio | 439 | 330 | 385 |
 | Pacotes instalados | 33 | 69 | 62 |
 
-Resultado da regra: manter SDK com MCP, por dependências.
+**O que o caso mostra:** nesta tarefa, nenhum framework acrescentou garantia que o SDK com MCP não tivesse. Durabilidade depois de queda, confirmação humana em operação protegida e parada diante de identificador divergente foram atendidas nas três opções e verificadas pela mesma bancada; a diferença entre elas ficou no código próprio e nas dependências.
 
-**Limites que acompanham esse resultado:**
+**Resultado:** manter o SDK com MCP. As três opções atenderam a todos os requisitos eliminatórios e empataram em acerto; o desempate foi pelas dependências: 33 pacotes, contra 69 e 62.
 
-- A escolha depende da margem e da métrica de código próprio. Contando linhas, com a margem original de 20%, Pydantic AI venceria; a margem subiu para 40% depois de resultados parciais, em favor da opção já usada, e essa mudança está registrada. Contando tokens com o tokenizador do Python 3.12 ou mais novo, a opção sem framework fica dentro da margem original por uma folga de 0,06%, o que não torna o resultado robusto.
-- O acerto com modelo real usa 3 repetições dos mesmos 30 comandos. As medidas não são independentes, e a amostra não separa diferenças menores que cerca de 15 pontos: o acerto serve como piso, não como desempate.
-- A régua foi revista depois da primeira auditoria independente, que achou 9 defeitos que ela não pegava; eles viraram controles, e as três opções passam na régua revista. A segunda auditoria demonstrou mais 5 defeitos fora da régua, em que as três opções também passam; eles não viraram controles e estão listados na DE-002 como não medidos.
-- A tarefa é pequena, com cerca de 400 linhas. Sistemas maiores podem favorecer os frameworks.
-- Cada opção teve uma implementação, feita por sistema agêntico.
-- O resultado vale para esta tarefa, estas versões e este modelo. Não é uma avaliação geral dos frameworks.
+**Como ler o resultado:**
 
-Conferência marcada para 04/02/2027.
+- Vale para esta tarefa (cerca de 400 linhas, uma implementação por opção), estas versões e este modelo. Sistemas maiores podem pedir outra resposta.
+- O ponto sensível é o código próprio. Com a margem de 20% definida no início, medida em linhas, o Pydantic AI seria o escolhido; a margem foi revista para 40% durante a coleta. As duas leituras, e a medida em tokens, estão na DE-002.
+- A bancada passou por duas auditorias independentes e uma verificação dirigida. Os defeitos encontrados viraram controles ou estão declarados na DE-002 como não medidos, e as três opções passam em todos.
 
 ## Reproduza
 
@@ -83,9 +80,9 @@ python3 medir.py ../implementacoes/o0-sdk-mcp
 
 Sem modelo real, o harness usa um modelo simulado que sempre acerta: ele testa o caminho, não o acerto. `harness_c2.py` confere a operação acrescentada para medir C2, `medir.py` gera C3, C4 e C5, e `contar_tokens.py` conta o código próprio em tokens, para a sensibilidade de C3. A coleta com modelo real usa `rodar_real.sh`, e a do modelo local sem rede, `rodar_e6.sh`.
 
-## Limitação atual
+## Estado do método
 
-O protocolo teve uso de uma só pessoa. Nenhuma conferência aconteceu, e é ela que mostra se as decisões acertaram. Os limites e margens dos níveis foram propostos sem medição.
+A conferência de 04/02/2027 vai mostrar se a decisão se sustenta, e os limites dos níveis do protocolo serão calibrados com o uso.
 
 ## Licença
 
